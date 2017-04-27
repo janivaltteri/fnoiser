@@ -1,0 +1,5 @@
+useDynLib(fnoiser)
+
+exportPattern("^[[:alpha:]]+")
+
+importFrom(Rcpp, evalCpp)
