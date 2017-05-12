@@ -52,7 +52,7 @@ RcppExport SEXP fn2(SEXP time, SEXP gamma, SEXP korrelaatio)
     khaj += (w[i]-ka)*(w[i]-ka);
   }
   khaj = sqrt(khaj/((double)t - 1.0));
-  Rcpp::NumericVector ulos(t);
+  Rcpp::NumericMatrix ulos(t,2);
   for(int i = 0; i < t; ++i){
     ulos[i] = (w[i]-ka)/khaj;
   }
