@@ -5,7 +5,7 @@
 Coloured noise generating routine
 }
 \description{
-Generates 1/f noise.
+Generates a single time series of 1/f noise.
 }
 \usage{
 fn1(t, g)
@@ -16,7 +16,7 @@ fn1(t, g)
     The length of time series of noise.
   }
   \item{g}{
-    The colour (exponent) of noise.
+    The colour exponent of noise.
   }
 }
 \details{
@@ -31,7 +31,7 @@ fn1(t, g)
 %% ...
 }
 \references{
-%% ~put references to the literature/web site here ~
+  Cohen et al. (1998) Proc. R. Soc. B. DOI: 10.1098/rspb.1998.0257
 }
 \author{
 Jani Anttila

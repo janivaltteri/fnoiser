@@ -5,7 +5,7 @@
 Coloured noise generating routine
 }
 \description{
-Generates 1/f noise.
+Generates two 1/f noises with a given correlation.
 }
 \usage{
 fn1(time, gamma, correlation)
@@ -16,8 +16,10 @@ fn1(time, gamma, correlation)
     The length of time series of noise.
   }
   \item{g}{
-    The colour (exponent) of noise.
+    The colour exponent of noise.
   }
+  \item{r}{
+    Correlation between the two generated noises.
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
@@ -31,7 +33,7 @@ fn1(time, gamma, correlation)
 %% ...
 }
 \references{
-%% ~put references to the literature/web site here ~
+  Cohen et al. (1998) Proc. R. Soc. B. DOI: 10.1098/rspb.1998.0257
 }
 \author{
 Jani Anttila
@@ -50,9 +52,9 @@ Jani Anttila
 ##-- ==>  Define data, use random,
 ##--	or do  help(data=index)  for the standard data sets.
 
-joo1 <- fn2(100,1.0,0.5)
-
-plot(joo1,type='l',col='red',ylim=c(-4,4),lwd=3)
+ns2 <- fn2(100,1.0,0.5)
+plot(ns2[,1],type='l')
+lines(ns2[,2])
 
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

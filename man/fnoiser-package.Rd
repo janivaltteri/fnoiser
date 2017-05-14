@@ -12,11 +12,12 @@
   \tabular{ll}{
     Package: \tab fnoise\cr
     Type: \tab Package\cr
-    Version: \tab 1.0\cr
-    Date: \tab 2017-04-27\cr
-    License: \tab What license is it under?\cr
+    Version: \tab 0.2.1\cr
+    Date: \tab 2017-05-14\cr
+    License: \tab GPL-2\cr
   }
-  This package has currently only one function 'fn1(t,g)'.
+  This package contains currently two functions: 'fn1(t,g)' and
+  'fn2(t,g,r)'.
 }
 \author{
   Jani Anttila
@@ -24,7 +25,7 @@
   Maintainer: Jani Anttila <jani.anttila@helsinki.fi>
 }
 \references{
-  Cohen et al. (1998) Proc. R. Soc. B.
+  Cohen et al. (1998) Proc. R. Soc. B. DOI: 10.1098/rspb.1998.0257
 }
 \keyword{ noise }
 \seealso{
@@ -32,5 +33,6 @@
 ~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
 }
 \examples{
-  noise <- fn1(10,0.0)
+  noise1 <- fn1(50,0.5)
+  plot(noise1,type='l')
 }
