@@ -1,7 +1,7 @@
 Package: fnoiser
 Type: Package
 Title: Calls c++ routine for generating coloured noise
-Version: 0.2.0
+Version: 0.2.1
 Date: 2017-04-25
 Author: Jani Anttila
 Maintainer: Jani Anttila <jani.v.anttila@gmail.com>
