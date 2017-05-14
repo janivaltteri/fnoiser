@@ -1,6 +1,5 @@
 #include <Rcpp.h>
 #include <random>
-#include <vector>
 #include <math.h>
 
 // a function for a dual fnoise run
