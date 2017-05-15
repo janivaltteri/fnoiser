@@ -7,3 +7,8 @@ fn2 <- function(time,gamma,correlation){
     require(Rcpp)
     .Call('fn2',c(time),c(gamma),c(correlation),PACKAGE='fnoiser')
 }
+
+fnn <- function(n,time,gamma,correlation){
+    require(Rcpp)
+    .Call('fnn',c(n),c(time),c(gamma),c(correlation),PACKAGE='fnoiser')
+}
