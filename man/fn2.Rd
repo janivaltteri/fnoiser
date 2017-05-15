@@ -20,6 +20,7 @@ fn1(time, gamma, correlation)
   }
   \item{r}{
     Correlation between the two generated noises.
+  }
 }
 \details{
 %%  ~~ If necessary, more details than the description above ~~
